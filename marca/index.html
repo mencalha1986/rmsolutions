@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMSolutions — Marca</title>
+<link rel="icon" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&family=Geist+Mono&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0b0a08; --bg2:#11100d; --text:#ece6d9; --muted:#8f887a; --faint:#5c574d; --line:rgba(236,230,217,.12); --gold:#c9a35b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:300 16px/1.6 Geist, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:1280px; margin:0 auto; padding:0 clamp(16px,4vw,56px); }
+  .mono { font:400 12px "Geist Mono", monospace; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
+  section { padding:96px 0; border-top:1px solid var(--line); }
+  .head { display:flex; justify-content:space-between; gap:16px; margin-bottom:48px; flex-wrap:wrap; }
+  h2 { font:400 clamp(32px,4vw,52px)/1.05 "Instrument Serif", serif; letter-spacing:-.02em; }
+  h2 em { color:var(--gold); }
+
+  .cover { min-height:92vh; display:grid; place-items:center; position:relative; border:0; }
+  .cover img { width:min(42vw,360px); }
+  .cover .tl, .cover .br { position:absolute; }
+  .cover .tl { top:32px; left:clamp(16px,4vw,56px); }
+  .cover .br { bottom:32px; right:clamp(16px,4vw,56px); text-align:right; }
+
+  /* assinatura */
+  .lockup { display:inline-flex; align-items:center; gap:.42em; font-size:var(--s,56px); line-height:1; }
+  .lockup img { height:1em; width:auto; }
+  .word { font-family:Geist, sans-serif; font-weight:500; letter-spacing:-.035em; }
+  .word i { font-family:"Instrument Serif", serif; font-weight:400; font-style:italic; letter-spacing:-.01em; color:var(--gold); margin-left:.02em; }
+  .lockup.v { flex-direction:column; gap:.32em; }
+  .lockup.v img { height:1.7em; }
+
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .tile { min-height:260px; display:grid; place-items:center; position:relative; background:var(--bg); }
+  .tile .mono { position:absolute; left:16px; bottom:14px; }
+  .tile.dark2 { background:var(--bg2); }
+  .tile.gold { background:var(--gold); }
+  .tile.cream { background:var(--text); }
+  .tile.gold .mono, .tile.cream .mono { color:rgba(11,10,8,.6); }
+  .tile.gold .word, .tile.cream .word { color:var(--bg); }
+  .tile.gold .word i { color:var(--bg); }
+  .tile.cream .word i { color:#9b7a3a; }
+  .tile.wide { grid-column:span 2; min-height:300px; }
+
+  /* construção */
+  .build { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .build svg { width:100%; height:auto; background:var(--bg2); border:1px solid var(--line); }
+  .notes { display:grid; gap:28px; }
+  .notes div { border-top:1px solid var(--line); padding-top:16px; }
+  .notes h3 { font:400 24px "Instrument Serif", serif; margin-bottom:4px; }
+  .notes p { color:var(--muted); }
+
+  .sizes { display:flex; align-items:flex-end; gap:40px; flex-wrap:wrap; }
+  .sizes figure { display:grid; gap:12px; justify-items:start; }
+  .sizes img { border-radius:22%; display:block; }
+
+  .colors { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .sw { aspect-ratio:1; padding:16px; display:flex; flex-direction:column; justify-content:flex-end; border:1px solid var(--line); }
+  .sw b { font:400 26px "Instrument Serif", serif; display:block; }
+  .sw span { font:400 12px "Geist Mono", monospace; opacity:.7; }
+
+  .type { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .type .big { font-size:96px; line-height:1; margin:18px 0 10px; }
+
+  @media (max-width:860px) {
+    .grid { grid-template-columns:1fr 1fr; } .tile.wide { grid-column:span 2; }
+    .build, .type { grid-template-columns:1fr; } .colors { grid-template-columns:1fr 1fr; }
+  }
+  @media (max-width:560px) {
+    .grid { grid-template-columns:1fr; } .tile.wide { grid-column:auto; }
+    .type .big { font-size:72px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <span class="mono tl">RMSolutions — Manual da marca</span>
+  <img src="simbolo.svg" alt="Símbolo RMSolutions">
+  <span class="mono br">Rômulo Mencalha<br>Software sob medida</span>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>O símbolo: <em>uma perna, duas letras.</em></h2><span class="mono">(01) Conceito</span></div>
+    <div class="build">
+      <svg viewBox="-24 -22 142 144" aria-label="Construção do símbolo">
+        <g stroke="#5c574d" stroke-width=".25" fill="none">
+          <path d="M-24 0H118M-24 100H118M-24 50H118M-24 6.5H118M-24 93.5H118"/>
+          <path d="M0 -22V122M12.5 -22V122M34 -22V122M81.5 -22V122M94.5 -22V122M56 -22V122"/>
+          <circle cx="34" cy="28.25" r="21.75"/>
+          <circle cx="34" cy="28.25" r="28.25" stroke-dasharray="1 1.5"/>
+          <path d="M18 15.7 L62 112 M50 112 L94 -22" stroke="#c9a35b" stroke-dasharray="1.5 1.5"/>
+        </g>
+        <defs><clipPath id="b"><rect x="-30" y="0" width="160" height="100"/></clipPath></defs>
+        <g clip-path="url(#b)" fill="none" stroke-width="13" stroke-miterlimit="20" opacity=".92">
+          <path stroke="#c9a35b" d="M28 50 L56 110 L88 -10 M88 -6 V106"/>
+          <path stroke="#ece6d9" d="M6 106 V6.5 H34 A21.75 21.75 0 0 1 34 50 H4"/>
+        </g>
+        <g font-family="Geist Mono, monospace" font-size="3.2" fill="#8f887a">
+          <text x="-21" y="-2">0</text><text x="-21" y="48">50</text><text x="-21" y="98">100</text>
+          <text x="98" y="-16">13u traço</text>
+        </g>
+      </svg>
+      <div class="notes">
+        <div><h3>A perna do R é o começo do M</h3><p>A diagonal dourada sai do bojo do R, toca a base e sobe até a haste final. Uma linha só faz o trabalho de duas letras: é o que um bom sistema faz com o retrabalho.</p></div>
+        <div><h3>Geometria exata</h3><p>Traço único de 13 unidades, bojo em semicírculo perfeito e cortes retos em cima e embaixo. Nada desenhado à mão livre, tudo alinhado na mesma grade.</p></div>
+        <div><h3>Duas cores, um significado</h3><p>O R em creme é a base sólida. O dourado marca o movimento: a solução que passa por dentro e conecta tudo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Assinaturas</h2><span class="mono">(02) Aplicações</span></div>
+    <div class="grid">
+      <div class="tile wide"><span class="lockup" style="--s:clamp(34px,5.4vw,72px)"><img src="simbolo.svg" alt=""><span class="word">RM<i>Solutions</i></span></span><span class="mono">Horizontal — principal</span></div>
+      <div class="tile dark2"><span class="lockup v" style="--s:34px"><img src="simbolo.svg" alt=""><span class="word">RM<i>Solutions</i></span></span><span class="mono">Vertical</span></div>
+      <div class="tile gold"><span class="lockup" style="--s:34px"><img src="simbolo-preto.svg" alt=""><span class="word">RM<i>Solutions</i></span></span><span class="mono">Sobre dourado</span></div>
+      <div class="tile cream"><span class="lockup" style="--s:34px"><img src="simbolo-preto.svg" alt=""><span class="word">RM<i>Solutions</i></span></span><span class="mono">Sobre claro</span></div>
+      <div class="tile dark2"><img src="simbolo-dourado.svg" alt="" style="width:30%"><span class="mono">Símbolo dourado</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Ícone e <em>tamanhos pequenos</em></h2><span class="mono">(03) Perfil · favicon · app</span></div>
+    <div class="sizes">
+      <figure><img src="icone-escuro.svg" width="180" alt=""><span class="mono">Foto de perfil</span></figure>
+      <figure><img src="icone.svg" width="120" alt=""><span class="mono">Ícone dourado</span></figure>
+      <figure><img src="icone.svg" width="64" alt=""><span class="mono">64px</span></figure>
+      <figure><img src="icone-escuro.svg" width="32" alt=""><span class="mono">32px</span></figure>
+      <figure><img src="icone.svg" width="16" alt="" style="border-radius:3px"><span class="mono">16px</span></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Cores</h2><span class="mono">(04) Paleta</span></div>
+    <div class="colors">
+      <div class="sw" style="background:#0b0a08"><b>Grafite</b><span>#0B0A08</span></div>
+      <div class="sw" style="background:#c9a35b;color:#0b0a08"><b>Latão</b><span>#C9A35B</span></div>
+      <div class="sw" style="background:#ece6d9;color:#0b0a08"><b>Marfim</b><span>#ECE6D9</span></div>
+      <div class="sw" style="background:#8f887a;color:#0b0a08"><b>Pedra</b><span>#8F887A</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Tipografia</h2><span class="mono">(05) Fontes</span></div>
+    <div class="type">
+      <div><span class="mono">Títulos e "Solutions"</span><div class="big" style="font-family:'Instrument Serif';font-style:italic;color:var(--gold)">Aa</div><p>Instrument Serif — elegância editorial.</p></div>
+      <div><span class="mono">Texto e "RM"</span><div class="big" style="font-family:Geist;font-weight:500;letter-spacing:-.04em">Aa</div><p>Geist — precisão de quem escreve código.</p></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
